@@ -19,10 +19,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText w = findViewById(R.id.t1);
                 EditText h = findViewById(R.id.t2);
-                EditText res = findViewById(R.id.t3);
                 double hb = Double.parseDouble(h.getText().toString());
                 double bmi = Double.parseDouble(w.getText().toString()) / (hb * hb);
-                res.setText(String.valueOf(bmi));
 
                 if (bmi >= 25) {
                     Toast.makeText(MainActivity.this, "YOU ARE OVERWEIGHT !!!", Toast.LENGTH_SHORT).show();
